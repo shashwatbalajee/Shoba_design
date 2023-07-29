@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./org.css">
+  <style>
+    .sub_block1 {
+      background-image: url('Images/Graphic Side-dbheader.png');
+    }
+  </style>
+  <title>Org page</title>
+</head>
+
+<body>
+  <section>
+    <div id="menubar">
+      <img id="hamburgerMenu" src="./Navigation Icons/Picture1.png">
+      <img src="./Navigation Icons/Picture2.png">
+      <img src="./Navigation Icons/Picture3.png">
+      <img src="./Navigation Icons/Picture4.png">
+      <img class="brief" style="margin: 25px 18px;" src="Navigation Icons/Picture5.png">
+    </div>
+    <div id="about_wrapper" class="remove">
+      <div>
+        <div class="about_txt" id="about_txt_head">
+          <i class="bi bi-caret-right"></i>Org Update
+        </div><br />
+        <div class="about_txt">World Architecture Day | Celebrating our superb architects!
+        </div><br />
+        <div class="about_txt">Know Your SOBHA - The Environmental Engineering Department
+        </div><br />
+
+      </div>
+    </div>
+    <div class="main_right_wrapper">
+      <div class="sub_block1">
+        <div class="sub_block1_search_box">
+          <input type="text" placeholder="Search..." />
+          <i class="bi bi-search"></i>
+        </div>
+        <div class="subblock1_h2">
+          <h2>Hello, Shan Arakkal</h2>
+          <!-- <h4>06 July, 2023 | Thursday</h4> -->
+        </div>
+        <div class="subblock1_h4">
+          <h4>06 July, 2023 | Thursday</h4>
+        </div>
+        <p>
+          <img src="Navigation Icons/Picture11.png" style="width: 150px; margin-left: 0px;"/>
+          <img style="width: 15px; margin-top:85px;" src="Navigation Icons/Picture10.png">
+          <img style="width: 15px; margin-top:85px; margin-left: 220px;" src="Navigation Icons/Picture9.png" />
+          <!-- Punch in 8:30 AM | Punch out 5:30 PM -->
+        </p>
+        <label style="margin-left: 270px;" class="txtinout">Punch in 8:30 AM | Punch out 5:30 PM</label>
+        <img id="sub_block1_logo" src="Images/SOBHA-Logo-Digital-sm.svg" />
+        <img class="avtar" src="Images/avtar-icon2.png">
+        <label class="txtname">Shan Arakkal</label>
+        <label class="txtdesg">Senior Manager</label>
+
+      </div>
+      <div class="sub_block2 ">
+        <h1>ORG Update</h1>
+        <label>Page intro text goes here</label>
+      </div>
+      <div class="sub_block3">
+        <div class="sub_block3_header">Who we are</div>
+        <div id="sub_block3inner_block">
+          <div class="sub_block3inner">
+            <div class="sub_block3inner_div">
+              <img src="Images/ORG update 1.jpg" />
+              <h3>World Architecture Day | Celebrating our superb architects!</h3>
+              <p>
+                Today we specially acknowledge
+                the contribution of our colleagues
+                from Architecture, who have helped
+                create some marvelous designs and
+                structures, and established new
+                international benchmarks. Thank
+                you for your effort and passion in
+                delivering excellence and happiness
+                to our customers.
+                The life of an architect is challenging, as changing customer needs, working with
+                budgets,
+                constraints on space, local byelaws, and more importantly, innovating new concepts that
+                can be executed is always demanding.
+                In our journey of 27 years of excellence, we have set new benchmarks in international
+                quality and experience. The design studio has delivered 56 mn. sft. built-up area (BUA)
+                across India in collaboration with an incredible talent pool of MEP and structural
+                engineers,
+                3D vizualizers and miniature model makers. Another 41 mn. sft. of BUA are in various
+                stages of implementation.
+              </p>
+            </div>
+          </div>
+          <div class="sub_block3inner">
+            <div class="sub_block3inner_div">
+              <img src="Images/ORG update 2.jpg" />
+              <h3>Know Your SOBHA - The Environmental Engineering Department</h3>
+              <p>
+                "SOBHA is one of the few companies to invest deeply in
+                the compliance, design, and execution of environmental
+                services for all its projects. We also have a dedicated
+                physicochemical and microbiological laboratory to test
+                water and wastewater at our project sites.
+                We take pride in being an environmentally meticulous
+                company. We conduct feasibility studies before
+                finalising a project to ensure sustainable development,
+                a healthy environment for residents, and work towards
+                being compliant with environmental regulations."
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script>
+    let toggle = false;
+    const elem = document.getElementById('about_wrapper')
+    const item = document.getElementById('hamburgerMenu')
+    item.addEventListener('click', () => {
+      if (!toggle) {
+        elem.classList.remove('remove')
+        toggle = !toggle;
+        console.log(toggle)
+      } else {
+        elem.classList.add('remove');
+        toggle = !toggle;
+        console.log(toggle)
+      }
+    })
+  </script>
+</body>
+
+</html>

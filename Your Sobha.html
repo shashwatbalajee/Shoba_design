@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./your sobha.css">
+  <style>
+    .sub_block1 {
+      background-image: url('Images/Graphic Side-dbheader.png');
+    }
+  </style>
+  <title>Your Shobha</title>
+</head>
+
+<body>
+  <section>
+    <div id="menubar">
+     <img id="hamburgerMenu" src="./Navigation Icons/Picture1.png">
+      <img src="./Navigation Icons/Picture2.png">
+      <img src="./Navigation Icons/Picture3.png">
+      <img src="./Navigation Icons/Picture4.png">
+      <img style="margin: 25px 18px;" src="Navigation Icons/Picture5.png">
+    </div>
+    <div id="about_wrapper" class="remove">
+      <div>
+        <div class="about_txt" id="about_txt_head">
+          <i class="bi bi-caret-right"></i>About SOBHA
+        </div><br />
+        <div class="about_txt">Who we are</div><br />
+        <div class="about_txt">What we do</div><br />
+        <div class="about_txt">How we work</div><br />
+        <div class="about_txt">What makes us unique</div><br />
+        <div class="about_txt">Organization</div><br />
+        <div class="about_txt">Our teams</div><br />
+        <div class="about_txt">Leadership</div><br />
+      </div>
+    </div>
+    <div id="main_right_wrapper">
+      <div class="sub_block1">
+        <div class="sub_block1_search_box">
+          <input type="text" placeholder="Search..." />
+          <i class="bi bi-search"></i>
+        </div>
+        <div class="subblock1_h2">
+          <h2>Hello, Shan Arakkal</h2>
+          <!-- <h4>06 July, 2023 | Thursday</h4> -->
+        </div>
+        <div class="subblock1_h4">
+          <h4>06 July, 2023 | Thursday</h4>
+        </div>
+        <p>
+          <img src="Navigation Icons/Picture11.png" style="width: 150px; margin-left: 0px;"/>
+          <img src="Navigation Icons/Picture10.png" style="width: 20px; position: absolute;margin-top: 84px;margin-left: 170px;"></img> 
+          <img src="Navigation Icons/Picture9.png" style="width: 20px; position: absolute;margin-top: 84px;margin-left: 220px;"/>
+          <!-- Punch in 8:30 AM | Punch out 5:30 PM -->
+        </p>
+        <label class="txtinout">Punch in 8:30 AM | Punch out 5:30 PM</label>
+        <img id="sub_block1_logo" src="Images/SOBHA-Logo-Digital-sm.svg" />
+        <img class="avtar" src="Images/avtar-icon2.png">
+        <label class="txtname">Shan Arakkal</label>
+        <label class="txtdesg">Senior Manager</label>
+      </div>
+      <div class="sub_block2">
+        <h1>Your Sobha</h1>
+        <label>Page intro text goes here</label>
+      </div>
+      <div class="sub_block3">
+        <div class="sub_block3_header">Passion At Work</div>
+        <div class="sub_block3_lower_sec">
+          <img src="Images/Sobha.png" />
+          <p>
+            SOBHA epitomizes “passion at work” in
+            totality. For us it is not only a catch phrase
+            which sounds just right, rather we all strive to
+            live it daily. It serves as our compass which
+            guides us towards creating world class
+            quality products and workmanship. It guides
+            us to be transparent in all our dealings and
+            adhere to delivery on time, each time.
+          </p>
+        </div>
+        <div id="sub_block3inner_block">
+          <div class="sub_block3inner">
+            <div class="sub_block3inner_div">
+              <img src="Images/Your sobha 2.png" />
+              <h3>The Sobha Way</h3>
+              <p>
+                Backward integration is what drives the organisation's turnkey projects. In a turnkey
+                scenario, we bring the expertise of all our divisions to focus on every single aspect of
+                a project. In other words, everything from precision engineering to aesthetic design and
+                from quality metal glazing to high-class interiors is done in-house. This allows for
+                stringent control on quality, which in turn gives our customers a fine combination of
+                precision and aesthetics. The Infosys centres in Bangalore, Mysore and several other
+                cities are fine examples of our expertise in turnkey construction.
+              </p>
+            </div>
+          </div>
+          <div class="sub_block3inner">
+            <div class="sub_block3inner_div">
+              <img src="Images/Your sobha 3.jpg" />
+              <h3>Residential</h3>
+              <p>
+                Since its inception, SOBHA limited has always strived for setting new benchmarks in
+                quality, customer centricity, business ethics, and transparency. This unwavering
+                commitment has made the company the most preferred real estate brand in India. SOBHA has
+                been declared as the Top brand in the Indian real estate sector for more than three
+                years in a row. The Company had also won top honours in India’s first ever Real Estate
+                Best Practices audit report- 2017 by Track2Realty.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script>
+    let toggle = false;
+    const elem = document.getElementById('about_wrapper')
+    const item = document.getElementById('hamburgerMenu')
+    item.addEventListener('click', () => {
+      if (!toggle) {
+        elem.classList.remove('remove')
+        toggle = !toggle;
+        console.log(toggle)
+      } else {
+        elem.classList.add('remove');
+        toggle = !toggle;
+        console.log(toggle)
+      }
+    })
+  </script>
+</body>
+
+</html>
